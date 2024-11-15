@@ -8,13 +8,16 @@
 	!global $purple = "#7F3C97"
 	!global $bluepurple = "#5B57A6"
 	!global $yellow = "#F6E948"
-
+	
 	node [
 		shape=rect,
 		style="rounded,filled",
 		fillcolor="$mediumblue",
 		fontcolor=white,
 		penwidth=2]
-
+	
 	splines=ortho
+	graph [fontname="sans-serif"]
+    node [fontname="sans-serif"]
+    edge [fontname="sans-serif"]
 !endprocedure
