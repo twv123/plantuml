@@ -1,5 +1,7 @@
-!procedure initFormats()
-    ' Standard colors.
+
+
+!procedure initColors()
+  ' Standard colors.
 	!global $darkblue = "#004987"
 	!global $mediumblue ="#0074C8"
 	!global $lightblue = "#00A7E1"
@@ -8,7 +10,10 @@
 	!global $purple = "#7F3C97"
 	!global $bluepurple = "#5B57A6"
 	!global $yellow = "#F6E948"
-	
+!endprocedure
+
+!procedure initDotFormats()
+  initColors()
 	node [
 		shape=rect,
 		style="rounded,filled",
