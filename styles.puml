@@ -2,27 +2,37 @@
 
 !procedure initColors()
   ' Standard colors.
-	!global $darkblue = "#004987"
-	!global $mediumblue ="#0074C8"
-	!global $lightblue = "#00A7E1"
-	!global $mediumgreen = "#3BD3AE"
-	!global $lightgreen = "#33BB9A"
-	!global $purple = "#7F3C97"
-	!global $bluepurple = "#5B57A6"
-	!global $yellow = "#F6E948"
+  !global $darkblue = "#004987"
+  !global $mediumblue ="#0074C8"
+  !global $lightblue = "#00A7E1"
+  !global $mediumgreen = "#3BD3AE"
+  !global $lightgreen = "#33BB9A"
+  !global $purple = "#7F3C97"
+  !global $bluepurple = "#5B57A6"
+  !global $yellow = "#F6E948"
+!endprocedure
+
+!procedure initObjectFormats()
+  initColors() 
+  skinparam roundCorner 
+  skinparam object{
+    BackgroundColor $mediumblue
+    BorderColor white
+    fontcolor = white
+    BorderThickness 2
+  }
 !endprocedure
 
 !procedure initDotFormats()
   initColors()
-	node [
+  node [
 		shape=rect,
 		style="rounded,filled",
 		fillcolor="$mediumblue",
 		fontcolor=white,
 		penwidth=2]
-	
 	splines=ortho
 	graph [fontname="sans-serif"]
-    node [fontname="sans-serif"]
-    edge [fontname="sans-serif"]
+	node [fontname="sans-serif"]
+	edge [fontname="sans-serif"]
 !endprocedure
