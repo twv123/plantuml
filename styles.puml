@@ -14,7 +14,7 @@
 
 !procedure initObjectFormats()
   initColors() 
-  skinparam roundCorner 
+  skinparam roundCorner 10
   skinparam object{
     BackgroundColor $mediumblue
     BorderColor white
