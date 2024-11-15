@@ -35,13 +35,14 @@
 !procedure $initDotFormats()
   $initColors()
   node [
-		shape=rect,
-		style="rounded,filled",
-		fillcolor="$mediumblue",
-		fontcolor=white,
-		penwidth=2]
-	splines=ortho
-	graph [fontname="sans-serif"]
-	node [fontname="sans-serif"]
-	edge [fontname="sans-serif"]
+    shape=rect,
+    style="rounded,filled",
+    fillcolor="$mediumblue",
+    fontcolor=white,
+    penwidth=2]
+  
+  splines=ortho
+  graph [fontname="sans-serif"]
+  node [fontname="sans-serif"]
+  edge [fontname="sans-serif"]
 !endprocedure
